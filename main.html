@@ -3,41 +3,55 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles.css">
+	 <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
 </head>
 
 <body>
-	<h1 style="text-align:center">Internship Form</h1>
-	<form class="form-inline" >
-		<div>
+	<div class="container">
+	<h1 class="text-center">Internship Form</h1>
+	<form>
+		<div class="row">
+			 <div class="form-group col-md-4">
 			<label for="first-name-input">First Name</label>
-		<input type="text" id="first-name-input" required>
+		<input type="text" id="first-name-input" class="form-control" required>
+			 </div>
+			 <div class="form-group col-md-4">
 		<label for="last-name-input">Last Name</label>
-		<input type="text" id="last-name-input" required>
+		<input type="text" id="last-name-input" class="form-control" required>
+			 </div>
+			 <div class="form-group col-md-4">
 		<label for="email-input">Email Address</label>
-		<input type="email" id="email-input" required>
+		<input type="email" id="email-input" class="form-control" required placeholder="xyz@abc.com">
 		</div><br>
-		<div>
-			<label for="college-input">College Name</label>
+		<div class="row">
+			 <div class="form-group col-md-4">
+			
+			<label for="college-input">College</label>
 			<input id="college-input" type="text" required>
+			 </div>
+			 <div class="form-group col-md-4">
 			<label for="graduation">Graduation Year</label>
-			<select placeholder="choose.." id="graduation" required>
+			<select placeholder="choose..." id="graduation" required>
+				<option value="">choose...</option>
 				<option >2020</option>
 				<option >2021</option>
 				<option >2022</option>
 				<option >2023</option>
-			</select>
+			</select></div>
+			 <div class="form-group col-md-4">
 			<label for="roll-no-input">Roll No.</label>
 			<input type="number" id="roll-no-input" required>
-			
-		</div><br>
-		<div>
-				<input type="checkbox" required id="conditions-checkbox">
-			<label for="conditions-checkbox"> Agree to terms and condition you must agree before submitting</label> 
-		<br><br>
-			<button type="button" class="btn btn-primary">Submit form</button>
+			 </div>
 		</div>
-		
+		<div class="checkbox">
+				<label><input type="checkbox" required id="conditions-checkbox">Agree to terms and conditions</label> 
+		</div>
+			<button type="submit" class="btn btn-primary">Submit form</button>
+		</div>
+	</div>
 	</form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
